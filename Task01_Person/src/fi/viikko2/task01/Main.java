@@ -23,5 +23,12 @@ public class Main {
         // System.out.println(people[0].equals(people[2]));
         // System.out.println(people[0].birthday());
         // System.out.println(people[0]);
+
+        // 1. Create a few Person objects in an array.
+        Person [] people = {new Person("Juan", 40), new Person("Maria", 35), new Person("Juan", 40)};
+        // 2. Call birthday() and print.
+        System.out.println(people[0].birthday());
+        // 3. Test equals with two identical objects.
+        System.out.println(people[2].equals(people[0]));
     }
 }

@@ -16,5 +16,12 @@
 package fi.viikko2.task04;
 
 public class Shape {
-
+    // Method area() that returns 0.0
+    public double area() {
+        return 0.0;
+    }
+    // Method toString() returns "Shape"
+    public String toString() {
+        return "Shape";
+    }
 }

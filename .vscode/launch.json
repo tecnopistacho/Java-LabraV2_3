@@ -5,6 +5,20 @@
       "type": "java",
       "name": "Main",
       "request": "launch",
+      "mainClass": "fi.viikko2.task05.Main",
+      "projectName": "java_viikko2_oop_student_skeleton_fixed_8995ba3c"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "fi.viikko2.task03.Main",
+      "projectName": "java_viikko2_oop_student_skeleton_fixed_8995ba3c"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
       "mainClass": "fi.viikko2.task01.Main",
       "projectName": "java_viikko2_oop_student_skeleton_fixed_dd3634b5"
     },

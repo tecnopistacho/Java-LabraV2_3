@@ -17,12 +17,28 @@
 package fi.viikko2.task06.model;
 
 public class Vehicle {
-    // TODO: protected String brand;
-    // TODO: int mileage;
+    protected String brand;
+    // protected: allows access from subclasses, even it they're in different packages
 
-    // TODO: public Vehicle(String brand, int mileage){ ... }
-    // TODO: public String getBrand(){ ... }
+    int mileage;    // (package-private in java means no modifier - just: int mileage;)
+                    // This allows access within the same package but not from outside or from subcclasses in other packages
+
+    public Vehicle(String brand, int mileage){
+        this.brand = brand;
+        this.mileage = mileage;
+    }
+    
+    public String getBrand(){
+        return brand;
+    }
 
     @Override
-    public String toString(){ throw new UnsupportedOperationException("TODO: implement toString()"); }
+    public String toString(){
+        return "Vehicle";
+    }
 }
+
+// 'SportsCar' is in a different package, it:
+    // can access 'brand', because it is protected
+    // can NOT access 'mileage', because it is package-private
+    // This is why we pass 'mileage' to 'super(...)' but doesn't use it directly

@@ -17,6 +17,22 @@ package fi.viikko2.task04;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Tehtävä 4: implementoi Rectangle ja Circle ennen ajoa.");
+        // Array of shapes
+        Shape[] shapes = {
+            new Rectangle(5.0, 3.0),
+            new Circle(2.0),
+            new Rectangle(4.0,4.0),
+            new Circle(1.5)
+        };
+
+        // Calculate total area
+        double totalArea = 0.0;
+        for (Shape s : shapes) {
+            System.out.println(s.toString() + " area: " + s.area());
+            totalArea += s.area();
+        }
+
+        // Print total area
+        System.out.println("Total area of all shapes: " + totalArea);
     }
 }

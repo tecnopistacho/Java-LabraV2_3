@@ -27,5 +27,20 @@ public class Main {
         BankAccount a2 = new BankAccount("FI00 123", 0);
         System.out.println(a.equals(a2));
         */
+
+        BankAccount a = new BankAccount("FI00 123", 100.0);
+        BankAccount b = new BankAccount("FI00 999", -50.0);
+
+        a.deposit(25.0); // balance becomes 125.0
+        a.withdraw(140.0); // too much, should fail
+        a.withdraw(50.0); // balance becomes 75.0
+
+        System.out.println(a); // Account number: FI00 123, balance 75.00
+        System.out.println("Balance of b: " + b.getBalance()); // 0.0
+       
+       BankAccount a2 = new BankAccount("FI00 123", 0.0); 
+       System.out.println("a equals a2: " + a.equals(a2)); // true
+
+
     }
 }
